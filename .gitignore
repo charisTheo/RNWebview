@@ -1,3 +1,6 @@
+**/.env
+assets/www
+
 # OSX
 #
 .DS_Store

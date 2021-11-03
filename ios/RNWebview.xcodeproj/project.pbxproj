@@ -17,6 +17,8 @@
 		2DCD954D1E0B4F2C00145EB5 /* RNWebviewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* RNWebviewTests.m */; };
 		6697D45EAC2DD15DA9B3AD48 /* libPods-RNWebview-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CFF8C740E5B096B1A08EEDD9 /* libPods-RNWebview-tvOS.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		8386E826272C1B52001A02AC /* www in Resources */ = {isa = PBXBuildFile; fileRef = 8386E825272C1B52001A02AC /* www */; };
+		83A63A44272B0C4900F0D419 /* www in Resources */ = {isa = PBXBuildFile; fileRef = 83A63A43272B0C4900F0D419 /* www */; };
 		AD367892908F94AB630CCF9E /* libPods-RNWebview.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A4883388C23D78A7B33E474D /* libPods-RNWebview.a */; };
 		BC8C3F351A8237EC6AB17E29 /* libPods-RNWebview-RNWebviewTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 45F17E13F20E1C25C3C2E910 /* libPods-RNWebview-RNWebviewTests.a */; };
 		F938604B60EC47D26F079ECB /* libPods-RNWebview-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D5DF58894C2A008BEF54ADFA /* libPods-RNWebview-tvOSTests.a */; };
@@ -58,6 +60,8 @@
 		5043AE97270EF71C0033DAB2 /* RNWebview.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = RNWebview.entitlements; path = RNWebview/RNWebview.entitlements; sourceTree = "<group>"; };
 		51230BF6CBDF601FF8B6E94A /* Pods-RNWebview-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNWebview-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-RNWebview-tvOSTests/Pods-RNWebview-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = RNWebview/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8386E825272C1B52001A02AC /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; name = www; path = ../assets/www; sourceTree = "<group>"; };
+		83A63A43272B0C4900F0D419 /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; name = www; path = ../assets/www; sourceTree = "<group>"; };
 		A4883388C23D78A7B33E474D /* libPods-RNWebview.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RNWebview.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8943D48F256A166F5E8FDB2 /* Pods-RNWebview.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNWebview.debug.xcconfig"; path = "Target Support Files/Pods-RNWebview/Pods-RNWebview.debug.xcconfig"; sourceTree = "<group>"; };
 		AF26FA7C654C9E76CCC2BBF6 /* Pods-RNWebview-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNWebview-tvOS.release.xcconfig"; path = "Target Support Files/Pods-RNWebview-tvOS/Pods-RNWebview-tvOS.release.xcconfig"; sourceTree = "<group>"; };
@@ -161,6 +165,8 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				83A63A43272B0C4900F0D419 /* www */,
+				8386E825272C1B52001A02AC /* www */,
 				13B07FAE1A68108700A75B9A /* RNWebview */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* RNWebviewTests */,
@@ -344,6 +350,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8386E826272C1B52001A02AC /* www in Resources */,
+				83A63A44272B0C4900F0D419 /* www in Resources */,
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 			);
@@ -420,7 +428,7 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-RNWebview/Pods-RNWebview-frameworks.sh",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/react-native-webrtc/WebRTC.framework/WebRTC",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/WebRTC/WebRTC.framework/WebRTC",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -478,7 +486,7 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-RNWebview-RNWebviewTests/Pods-RNWebview-RNWebviewTests-frameworks.sh",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/react-native-webrtc/WebRTC.framework/WebRTC",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/WebRTC/WebRTC.framework/WebRTC",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (

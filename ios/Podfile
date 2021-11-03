@@ -10,6 +10,10 @@ target 'RNWebview' do
 
   use_react_native!(:path => config["reactNativePath"])
 
+  pod 'react-native-static-server', :path => '../node_modules/react-native-static-server'
+
+  pod 'RNFS', :path => '../node_modules/react-native-fs'
+
   target 'RNWebviewTests' do
     inherit! :complete
     # Pods for testing

@@ -129,6 +129,8 @@ android {
         targetCompatibility JavaVersion.VERSION_1_8
     }
 
+    sourceSets { main { assets.srcDirs = ['src/main/assets', '../../assets'] } }
+
     defaultConfig {
         applicationId "com.gumtestapp"
         minSdkVersion rootProject.ext.minSdkVersion
