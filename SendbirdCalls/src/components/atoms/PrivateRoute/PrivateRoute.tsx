@@ -13,7 +13,6 @@ const PrivateRoute = ({ component: Component, render = () => null, ...props }: R
   const { isAuthenticated } = useSbCalls();
   const history = useHistory();
   const query = new URLSearchParams(useLocation().search);
-  console.log("🚀 ~ file: PrivateRoute.tsx ~ line 16 ~ PrivateRoute ~ query", query)
 
   return <Route {...props} render={renderProps => {
     if (!isAuthenticated) {
