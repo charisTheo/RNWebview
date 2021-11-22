@@ -3,7 +3,7 @@
 [Prerequisites](#prerequisites)
 
   * [Sendbird application](#sendbird-application)
-    
+
   * [Install dependencies](#install-dependencies)
 
   * [Build the Sendbird Calls web app](#build-the-sendbird-calls-web-app)
@@ -11,18 +11,18 @@
 [Run the app](#run-the-app)
 
   * [iOS](#ios)
-    
+
   * [Android](#android)
-  
+
 [Troubleshooting](#troubleshooting)
 
   * [iOS](#ios-1)
-    
+
   * [Android](#android-1)
 
 ----
 
-This is a sample React Native app that demonstrates implementation of [Sendbird Calls](https://sendbird.com/features/voice-and-video) within a React Native application, 
+This is a sample React Native app that demonstrates implementation of [Sendbird Calls](https://sendbird.com/features/voice-and-video) within a React Native application,
 being able to call another user and receive incoming calls with Push Notifications enabled for both Android and iOS.
 
 The project is using [`react-native-webview`](https://github.com/react-native-webview/react-native-webview) to make the above possible.
@@ -56,14 +56,26 @@ cd SendbirdCalls && npm i && npm run build
 
 ### iOS
 
-`npm run ios`
+```sh
+npm run ios
+```
 
 ### Android
 
-`npm run android`
+```sh
+npm run android
+```
 
-> ⚠️  If you are testing the Android version on an emulator, make sure you **close all emulator instances before running `npm run android`**, otherwise the metro server will be disconnected from the app in the emulator. 
+> ⚠️  If you are testing the Android version on an emulator, make sure you **close all emulator instances before running `npm run android`**, otherwise the metro server will be disconnected from the app in the emulator.
 > When no emulator is running already, React Native scripts should start an emulator automatically and connect to the metro server successfully.
+
+#### Android: watch and reload
+
+When working in the `SendbirdCalls` directory which is not directly linked to `react-native` scripts, you may want to automatically build the website and reload the Android emulator or device on each save/change of the files. To do that, run the following command:
+
+```sh
+cd SendbirdCalls && npm run watch
+```
 
 ----
 
@@ -93,7 +105,7 @@ Need to visit the URL of the local server on `http://localhost/` and not the IP 
 
 1. Need to enable Cleartext traffic within `AndroidManifest.xml` (Follow “Enable Cleartext traffic on Android” step) - [Read more here](https://medium.com/astrocoders/i-upgraded-to-android-p-and-my-react-native-wont-connect-to-my-computer-to-download-index-delta-42580377e1d3).
 
-2. If testing on an emulator with no Google Play services connected and auto-updates, make sure you update **Google Play services** and **Android System WebView** from Play store (Will [auto-update](https://developer.chrome.com/docs/multidevice/webview/#will-the-new-webview-auto-update) on devices running Android Lollipop and above). 
+2. If testing on an emulator with no Google Play services connected and auto-updates, make sure you update **Google Play services** and **Android System WebView** from Play store (Will [auto-update](https://developer.chrome.com/docs/multidevice/webview/#will-the-new-webview-auto-update) on devices running Android Lollipop and above).
 
 3. If you don’t see Android System WebView under **Updates**, you may have to enable it on the device from the App info section of the device settings. If you can’t enable it either, you may have to temporarily disable Chrome before enabling and updating the Android System WebView.
 
