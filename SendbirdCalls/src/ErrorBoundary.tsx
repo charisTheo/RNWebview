@@ -18,13 +18,12 @@ export default class ErrorBoundary extends React.Component<{}, {
 
   static getDerivedStateFromError() {
     // Update state so the next render will show the fallback UI.
-    return { hasError: false };
+    return { hasError: true };
   }
 
   componentDidCatch(error: Error, errorInfo: React.ErrorInfo) {
     console.log(error, errorInfo);
     this.setState({ error, errorInfo });
-    window.ReactNativeWebView.postMessage(error + '\n' + errorInfo);
   }
 
   render() {
