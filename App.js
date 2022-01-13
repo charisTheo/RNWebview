@@ -64,15 +64,13 @@ const App = () => {
   };
 
   const logout = async () => {
-    await SendBirdCall.unregisterAllPushTokens(SendBirdCall.TokenType.FCM)
-      .then(() => {
-        console.log('token is unregistered.');
-      })
-      .catch((e) => {
-        console.error(`token is not registered. Error: ${e}`);
-      });
+    try {
+      await SendBirdCall.unregisterAllPushTokens(SendBirdCall.TokenType.FCM);
+      console.log('token is unregistered.');
+    } catch (e) {
+      console.error(`token is not registered. Error: ${e}`);
+    }
     SendBirdCall.deauthenticate();
-
     setAuthed(false);
   };
 

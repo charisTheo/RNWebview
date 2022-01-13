@@ -1,5 +1,7 @@
 # React Native WebView example imeplementation
 
+> This repository is the final implementation of [How to build a React Native video chat app with Sendbird Calls](https://sendbird.com/developer/tutorials/react-native-video-chat) tutorial.
+
 [Prerequisites](#prerequisites)
 
   * [Sendbird application](#sendbird-application)

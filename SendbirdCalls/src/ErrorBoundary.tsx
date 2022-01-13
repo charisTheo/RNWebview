@@ -1,7 +1,5 @@
 import React from 'react';
 
-declare var window: { ReactNativeWebView: { postMessage: (arg0: string) => void; }; }
-
 export default class ErrorBoundary extends React.Component<{}, {
   hasError: boolean;
   error: Error | null;
@@ -10,7 +8,7 @@ export default class ErrorBoundary extends React.Component<{}, {
   constructor(props: Object) {
     super(props);
     this.state = {
-      hasError: true,
+      hasError: false,
       error: null,
       errorInfo: null,
     };
